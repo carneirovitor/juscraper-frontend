@@ -22,7 +22,7 @@ class LawsuitSearch extends Component {
     crawlerLawsuit(lawsuitNumber) {
         if(lawsuitNumber){
             this.setState({ loading: true });
-            axios.get(`api/lawsuit/?lawsuitNumber=${lawsuitNumber}`)
+            axios.get(`https://sigjur-backend.herokuapp.com/api/lawsuit/?lawsuitNumber=${lawsuitNumber}`)
                 .then(response => {
                     this.props.history.push(`?lawsuitNumber=${lawsuitNumber}`);
                     this.setState({ lawsuit: response.data, loading: false });
