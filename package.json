@@ -1,4 +1,5 @@
 {
+  "proxy": "http://sigjur-backend.herokuapp.com",
   "name": "sigjur-frontend",
   "version": "0.1.0",
   "private": true,

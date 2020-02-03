@@ -5,6 +5,8 @@ import axios from 'axios'
 import LawsuitInfo from './lawsuit-info/LawsuitInfo'
 import qs from 'qs';
 
+axios.defaults.baseURL = "https://cors-anywhere.herokuapp.com/https://sigjur-backend.herokuapp.com"
+
 const { Search } = Input;
 
 class LawsuitSearch extends Component {
